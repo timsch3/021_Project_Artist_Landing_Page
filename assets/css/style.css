@@ -6,31 +6,6 @@
     font-family: Monofur;
     src: url(../fonts/Monofur.ttf);
 }
-/*
-#E9EDE4
-
-#EEECDD
-
-#FDFDFD
-
-#EC7639
-
-#9DC8F3
-
-#8046A9
-
-#B275A6
-
-#AF97B7
-
-#D53A3A
-
-#30333B
-
-#212126
-
-#403936
-*/
 /* ==================== CSS Reset */
 * {
     margin: 0;
@@ -71,7 +46,6 @@
 }
 #hero h1:last-of-type {
     float: right;
-    font-size: 4em;
     animation: heroHeadingR 6s ease-out 1s 1 forwards;
 }
 #hero div {
@@ -92,10 +66,13 @@
     opacity: 0;
     animation: heroCTA 1s ease-in 5s 1 forwards;
 }
-#hero a {
+#hero a:first-of-type {
     text-decoration: none;
     color: #D53A3A;
-    
+}
+#hero a:last-of-type {
+    text-decoration: none;
+    color: #5092f4;
 }
 #hero a:hover, a:active {
     text-decoration: underline;
@@ -108,7 +85,7 @@
     90% {font-size: 3em;}
 }
 @keyframes heroHeadingR {
-    0% {font-size: 4em}
+    0% {font-size: 3em}
     15% {font-size: 3em;}
     30% {font-size: 3em;}
     45% {font-size: 4em;}
@@ -117,6 +94,6 @@
     100% {font-size: 3em}
 }
 @keyframes heroCTA {
-    from {opacity: 0;}
+    from {opacity: 0}
     to {opacity: 1}
 }
