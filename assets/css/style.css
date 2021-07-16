@@ -1,0 +1,122 @@
+@font-face {
+    font-family: DigitaltsLime;
+    src: url(../fonts/DigitaltsLime.ttf);
+}
+@font-face {
+    font-family: Monofur;
+    src: url(../fonts/Monofur.ttf);
+}
+/*
+#E9EDE4
+
+#EEECDD
+
+#FDFDFD
+
+#EC7639
+
+#9DC8F3
+
+#8046A9
+
+#B275A6
+
+#AF97B7
+
+#D53A3A
+
+#30333B
+
+#212126
+
+#403936
+*/
+/* ==================== CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* ==================== Hero section */
+#hero {
+    min-width: 100vw;
+    min-height: 100vh;
+    background: url(../img/Beings1_2000px.jpg) no-repeat center/contain;
+    color: #30333B;
+}
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    background: url(../img/Beings1_2000px_greyscale.jpg) no-repeat center/cover;
+    opacity: .2;
+    z-index: -1;
+}
+/* ---------- Animated headings */
+#hero h1 {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 50px;
+    font-family: DigitaltsLime;
+    font-size: 3em;
+    background-color: #FDFDFDe0;
+    border-radius: 50px;
+}
+#hero h1:first-of-type {
+    animation: heroHeadingL 3s ease-out 1s 1 forwards;
+}
+#hero h1:last-of-type {
+    float: right;
+    font-size: 4em;
+    animation: heroHeadingR 6s ease-out 1s 1 forwards;
+}
+#hero div {
+    display: inline-block;
+    min-width: 1%;
+    margin: 0 auto;
+}
+#hero h2 {
+    position: absolute;
+    bottom: 50px;
+    text-align: center;
+    font-family: Monofur;
+    font-size: 1.5em;
+    max-width: 50%;
+    background-color: #FDFDFDe0;
+    border-radius: 50px;
+    padding: 10px 20px;
+    opacity: 0;
+    animation: heroCTA 1s ease-in 5s 1 forwards;
+}
+#hero a {
+    text-decoration: none;
+    color: #D53A3A;
+    
+}
+#hero a:hover, a:active {
+    text-decoration: underline;
+    
+}
+@keyframes heroHeadingL {
+    0% {font-size: 3em}
+    30% {font-size: 4em;}
+    60% {font-size: 4em;}
+    90% {font-size: 3em;}
+}
+@keyframes heroHeadingR {
+    0% {font-size: 4em}
+    15% {font-size: 3em;}
+    30% {font-size: 3em;}
+    45% {font-size: 4em;}
+    60% {font-size: 4em;}
+    75% {font-size: 3em;}
+    100% {font-size: 3em}
+}
+@keyframes heroCTA {
+    from {opacity: 0;}
+    to {opacity: 1}
+}
