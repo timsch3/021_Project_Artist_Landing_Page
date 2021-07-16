@@ -1,6 +1,6 @@
 @font-face {
-    font-family: DigitaltsLime;
-    src: url(../fonts/DigitaltsLime.ttf);
+    font-family: Lobster;
+    src: url(../fonts/Lobster.ttf);
 }
 @font-face {
     font-family: Monofur;
@@ -13,6 +13,7 @@
 }
 /* ==================== Hero section */
 #hero {
+    display: table;
     min-width: 100vw;
     min-height: 100vh;
     background: url(../img/Beings1_2000px.jpg) no-repeat center/contain;
@@ -36,7 +37,7 @@
     display: inline-block;
     padding: 10px 20px;
     margin: 50px;
-    font-family: DigitaltsLime;
+    font-family: Lobster;
     font-size: 3em;
     background-color: #FDFDFDe0;
     border-radius: 50px;
@@ -48,15 +49,20 @@
     float: right;
     animation: heroHeadingR 6s ease-out 1s 1 forwards;
 }
-#hero div {
-    display: inline-block;
-    min-width: 1%;
-    margin: 0 auto;
+#headingsWrapper {
+    display: inline;
+    width: 100%;
+    height: 200px;
+}
+#spacer {
+    height: calc(100vh - 300px);
+}
+#catWrapper {
+    text-align: center;
+    height: 100px;
 }
 #hero h2 {
-    position: absolute;
-    bottom: 50px;
-    text-align: center;
+    display: inline-block;
     font-family: Monofur;
     font-size: 1.5em;
     max-width: 50%;
